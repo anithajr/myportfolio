@@ -1,0 +1,168 @@
+/*  CSS DOCUMENT  */
+
+html, body, object, img {
+    margin: 0;
+    padding: 0;
+}
+
+a:active, a:hover { outline: 0; }
+img { border: 0; }
+
+/* structure */
+
+#content{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    }
+
+#border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 298px;
+    height: 398px;
+    border: 1px solid #000000;
+    z-index: 997;
+    }
+
+#bg{
+    display: block;
+    position: absolute;
+    width: 447px;
+    height: 400px;
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+    background: url(bg.jpg) no-repeat;
+    }
+
+#copy1, #copy2, #copy3, #lockup, #logo, #cta{
+	display: block;
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	left: 0;
+	z-index: 101;
+	opacity: 0;
+    }
+
+#copy1{ background: url(sprite.png) 0 0 no-repeat; }
+#copy2{ background: url(sprite.png) -300px 0 no-repeat; }
+#copy3{ background: url(sprite.png) 0 -800px no-repeat; }
+#lockup{ background: url(sprite.png) -600px 0 no-repeat; }
+#logo{ background: url(sprite.png) 0 -400px no-repeat; }
+#cta{ background: url(sprite.png) -300px -400px no-repeat; }
+.cta-over{ background: url(sprite.png) -600px -400px no-repeat !important; }
+
+#tablet{
+    display: block;
+    position: absolute;
+    width: 175px;
+    height: 380px;
+    left: -300px;
+    z-index: 101;
+    opacity: 1;
+    background: url(tablet.png) no-repeat;
+    }
+
+#biker{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    left: 148px;
+    top: 0;
+    z-index: 102;
+    opacity: 1;
+    background: url(biker.png) no-repeat;
+    }
+
+#reset{
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	opacity: 0;
+	z-index: 999;
+    cursor: pointer;
+    background: url(reset.png) 0 0 no-repeat;
+	}
+
+a.click-through{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 998;
+    background: #ffffff;
+    }
+
+/* Animations */
+
+.animClass{ -webkit-transform: translate3d(0, 0, 0); /* Force Hardware Acceleration */ }
+
+.transition-1{
+	-webkit-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-moz-transition: all 0.5s ;
+	transition: all 0.5s ;
+}
+.transition-2{
+    -webkit-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    }
+
+.transition-3{
+    -webkit-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    }
+
+.transition-4{
+    -webkit-transition: all 0.1s ;
+    -ms-transition: all 0.1s ;
+    -moz-transition: all 0.1s ;
+    transition: all 0.1s ;
+    }
+
+.move-right{
+    -webkit-transform: translate( 300px, 0px);
+    -ms-transform: translate( 300px, 0px);
+    -moz-transform: translate( 300px, 0px);
+    transform: translate( 300px, 0px);
+    }
+
+.move-bg{
+    -webkit-transform: translate( -147px, 0px);
+    -ms-transform: translate( -147px, 0px);
+    -moz-transform: translate( -147px, 0px);
+    transform: translate( -147px, 0px);
+    }
+
+.scale-down{
+    -webkit-transform: translate( -340px, -480px) scale(0.16);
+    -ms-transform: translate( -340px, -480px) scale(0.16);
+    -moz-transform: translate( -340px, -480px) scale(0.16);
+    transform: translate( -340px, -480px scale(0.16));
+    }
+
+.scale-start{
+    -webkit-transform: translate( -400px, 20px) scale(3.4) !important;
+    -ms-transform: translate( -400px, 20px) scale(3.4) !important;
+    -moz-transform: translate( -400px, 20px) scale(3.4) !important;
+    transform: translate( -400px, 20px) scale(3.4) !important;
+    }
+
+.fade-out{ opacity: 0 !important; }
+.fade-in{ opacity: 1 !important; }

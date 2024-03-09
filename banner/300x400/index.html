@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="ad.size" content="width=300,height=400">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>300x400 Accenture</title>
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com";
+	</script>
+
+	<!-- CSS  -->
+
+	<style>
+		img{
+			border:0;
+			}
+
+		body{
+			margin:0;
+			padding:0;
+			}
+
+		#container{
+			position:relative;
+			border: 1px solid #666;
+			width:298px;
+			height:398px;
+			overflow:hidden;
+			}
+
+		#bgimage{
+			height:400px;
+			width:300px;
+			}
+
+		#c1, #c2, #c3, #cta, #b1, #b2, #b3, #b4, #headline, #arrow, #logo, #bg, #clicktag, #lockup{
+			position:absolute;
+			}
+
+		#c1, #c2, #c3, #cta, #b1, #b2, #b3, #b4, #logo{
+			opacity:0;
+			}
+
+		#arrow{
+			left:-1894px;
+			top:-885px;
+			}
+
+		#lockup{
+			height:400px;
+			width:300px;
+			left: -300px;
+			}
+
+		#cta{
+			left: 16px;
+			top: 124px;
+			width: 97px;
+			height: 23px;
+			background: url(cta.png) no-repeat;
+			background-color:#F7B600;
+			}
+
+		#reset{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 0px;
+			right: 2px;
+			background: url(reset.png) 0 0 no-repeat;
+			z-index: 999;
+			cursor: pointer;
+			opacity: 0;
+			}
+
+		a.click-through {
+		    position: absolute;
+		    width: 300px;
+		    height: 400px;
+		    top: 0px;
+		    left: 0px;
+		    cursor: pointer;
+		    opacity: 0;
+		    z-index: 998;
+		    background: #ffffff;
+		    }
+
+		.transition-1{
+			-webkit-transition: all 0.4s ;
+			-ms-transition: all 0.4s ;
+			-moz-transition: all 0.4s ;
+			transition: all 0.4s ;
+			}
+
+		.scale-down{
+			-webkit-transform: translate( 393px, -526px) scale(0.052) !important;
+			-ms-transform: translate( 393px, -526px) scale(0.052) !important;
+			-moz-transform: translate( 393px, -526px) scale(0.052) !important;
+			transform: translate( 393px, -526px) scale(0.052) !important;
+			}
+
+		.right{
+			-webkit-transform: translate( 300px, 0) !important;
+			-ms-transform: translate( 300px, 0) !important;
+			-moz-transform: translate( 300px, 0) !important;
+			transform: translate( 300px, 0) !important;
+			}
+
+		.fade-in{
+			opacity: 1 !important;
+			}
+
+		.fade-out{
+			opacity: 0 !important;
+			}
+
+	</style>
+</head>
+<body onload="startAnim()">
+<!--<img src="f1.jpg" width="300" height="400" style="position:absolute; top:0; left:0; opacity:0.8; z-index:999">-->
+	<div id="container">
+		<div id="bg"><img id="bgimage" src="bg.jpg" width="300" height="400" /></div>
+        <div id="b1"><img src="b1.png" width="300" height="400" /></div>
+        <div id="b2"><img src="b2.png" width="300" height="400" /></div>
+        <div id="b3"><img src="b3.png" width="300" height="400" /></div>
+        <div id="b4"><img src="b4.png" width="300" height="400" /></div>
+        <div id="c1"><img src="c1.png" width="300" height="400" /></div>
+        <div id="c2"><img src="c2.png" width="300" height="400" /></div>
+        <div id="lockup"><img src="lockup.png" width="300" height="400" /></div>
+        <div id="c3"><img src="c3.png" width="300" height="400" /></div>
+        <div id="cta"></div>
+		
+        <div id="logo"><img src="logo.png" width="300" height="400"  /></div>
+		<a onMouseOver="ctOver()" onMouseOut="ctOut()" class="click-through" href="javascript:window.open(window.clickTag)"></a>​
+        <img src="https://www.accenture.com/_layouts/accenture/pages/AdHandler.ashx?%u" style="position:absolute; visibility:hidden" width="300" height="400" />
+	</div>
+
+	<!-- JS  -->
+
+	<script>
+		function ctOver(){ document.getElementById('cta').style.backgroundColor = '#000000'; }
+		function ctOut(){ document.getElementById('cta').style.backgroundColor = '#fcb315'; }
+	</script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>

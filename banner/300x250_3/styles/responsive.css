@@ -1,0 +1,81 @@
+
+/*********** RESPONSIVE MEDIA QUERIES **********/
+
+/* 300x250*/
+@media screen and (max-height:350px)
+{
+    /* default master size */
+	#image{
+		right: -3%
+	}
+
+}
+
+/* 300x250*/
+@media screen and (min-width:320px) and (max-height: 250px)
+{
+    #frame1Holder{
+    	top: 50%;
+	    left: 4.5%;
+	    width: 47%;
+    }
+    #frame1headline1, #frame1headline2{
+    	font-size: 2.5em;
+	    line-height: 1em;
+	    letter-spacing: -0.4px;
+    }
+    #frame2Holder{
+    	top: 34%;
+    }
+    #frame2copy1{
+    	font-size: 3.2em;
+	    line-height: 1.15em;
+	    letter-spacing: 0.5px;
+    }
+    #frame2copy2Holder {
+	    top: 70%;
+	}
+	#frame2copy2{
+		font-size: 2.4em;
+	}
+	#cta{
+		font-size: 1.4em;
+	    letter-spacing: 0.5px;
+	    padding: 3.5px 7px;
+	    margin-top: 2.95px;
+	    margin-left: 1px;
+	    border-radius: 3px;
+    	
+	}
+    #logo {
+	    width: 30%;
+	    height: auto;
+	    left: 5.437%;
+	    top: 11.5%;
+	    opacity: 0;
+	}
+}
+/* 300x600*/
+@media screen and (min-height: 600px){
+	#bg1{
+		width: 100%;
+	    height: 50%;
+	    top: 50%;
+	}	
+	#frame1Holder{
+		top: 75.5%;
+	}
+	#frame1headline1, #frame1headline2{
+		font-size: 1.7em !important;
+	}
+	#logo{
+		width: 39%;
+		top: 3.5%;
+	}
+	#image {
+    width: auto;
+    height: 50%;
+    top: 0px;
+    left: -50px !important;
+}
+}

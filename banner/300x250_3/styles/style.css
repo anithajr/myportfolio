@@ -1,0 +1,220 @@
+/* ---------- RESET ----------------- */
+@charset "UTF-8";
+html, body, div, span, object, iFrame,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* ----------- FONT ---------------- */
+@font-face {
+    font-family: 'Delivery Bold';
+    src: url('../fonts/Delivery_W_Bd.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Delivery Condensed Black';
+    src: url('../fonts/Delivery_W_CdBlk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ---------- GENERIC -------------- */
+* { position: absolute; background-repeat:no-repeat; -webkit-backface-visibility: hidden; box-sizing: border-box; -webkit-transform: rotate(0.001deg); -moz-transform: rotate(0.001deg); -o-transform: rotate(0.001deg); -ms-transform: rotate(0.001deg); transform: rotate(0.001deg); }
+br { position: relative !important; }
+span { position: relative !important}
+html, body { margin: 0px; overflow: hidden; background-color: white; width: 100%; height: 100%; font-size: 2vmax;}
+img { width: 100%; height: 100%; }
+
+.hidden { opacity: 0; }
+.clicker { cursor: pointer; }
+.dark { background-color: #000; }
+
+
+.fullSize {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#mainContainer {
+	position: relative;
+    overflow: hidden;
+    height: 100%;
+	width: 100%;
+    cursor:pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hide{
+	display: none;
+}
+
+/* Background Images */
+#bgHolder {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#bg1 {
+	width: 50%;
+    height: 100%;
+    top: 0;
+    left:0;
+	overflow: hidden;
+	background: rgb(255,204,0);
+background: linear-gradient(180deg, rgba(255,204,0,1) 0%, rgba(254,237,165,1) 100%);
+}
+
+#image{
+	width: auto;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+#bg3{
+	opacity: 0;
+	background-color: #ffcc00;
+}
+
+/* DAZN Logos */
+#logo {
+    width: 26%;
+    height: auto;
+    left: 5.437%;
+    top: 7.5%;
+    opacity: 0;
+}
+
+
+/* Texts */
+#frame1Holder{
+	position: relative;
+	top: 45.5%;
+    left: 6.5%;
+    /* width: 39.5%; */
+    width: 43%;
+    transform: translate(0, -50%);
+}
+
+#frame2Holder{
+	position: absolute;
+	top: 28%;
+    left: 6.5%;
+    /* width: 39.5%; */
+    width: 90%;
+}
+
+.copy {
+	position: relative;
+	width: 100%;
+	font-family: "Delivery Condensed Black";
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    line-height: 1.08em;
+    letter-spacing: 0.5px;
+	/*color: #d40511;*/
+	color: transparent;
+   	text-shadow: 0 0 5px #d40511;
+   	transform: translateX(-120%);
+}
+#copy2{
+	letter-spacing: 1.4px;
+}
+#frame2copy2Holder{
+	position: absolute;
+    top: 62%;
+    left: 6.5%;
+    width: 90%;
+    height: auto;
+}
+
+#frame2copy2{
+	position: relative;
+    font-size: 2em;
+    line-height: 1.2em;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+#cta{
+	position: relative;
+	display: inline-block;
+	font-family: "Delivery Bold";  
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    padding: 7.5px 17px;
+    background-color: #d40511;
+    color: #ffffff;
+    margin-top: 5.95px;
+    margin-left: 0px;
+    text-transform: initial;
+    opacity: 0;
+	border-radius: 4px;
+}
+
+#frame2copy2 > span{
+	font-family: "Delivery Bold";
+}
+
+
+
+/* CTA */
+#ctaHolder {
+	width: 100%;
+	height: 33px;
+	background-color: #f7ff1a;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+
+
+
+/* Custom CSS for 160x600*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

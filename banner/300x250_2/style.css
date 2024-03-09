@@ -1,0 +1,351 @@
+/* reset */
+
+html, body, object, img {
+    margin: 0;
+    padding: 0;
+	}
+
+a:active, a:hover { outline: 0; }
+img { border: 0; }
+
+/* structure */
+
+#content{
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+    background: #ffffff;
+}
+
+/* Frame border begin */
+#border {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 298px;
+	height: 248px;
+	border: 1px solid #808080;
+	z-index:990;
+}
+/* Frame border end */
+
+/* elements */
+
+#pic1, #pic2, #pic2a, #roomba, #endFrame, #roomba2, #roomba-brush, #logo, #copy1a, #copy1b, #copy1c, #copy2, #copy3, #copy4, #obot, #whiteBlock, #circleR, #bigCircle, #roomba-main, #cta, #whiteBg{
+    width: 300px;
+	height: 250px;
+	display: block;
+	opacity: 0;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+	}
+
+#pic1{ background: url(pic1.jpg) 0 0 no-repeat; z-index: 110; }
+#pic2{ background: url(pic2.jpg) 0 0 no-repeat; z-index: 110; }
+#pic2a{ background: url(pic2a.jpg) 0px 0px no-repeat; z-index: 110; width:100px; height:250px; left:200px; }
+#roomba{ background: url(item1.png) 0px 0px no-repeat; z-index: 205; opacity:1; left: 194px; top: 329px;}
+#logo{ background: url(sprite.png) 0px 0px no-repeat; z-index: 110; }
+#copy1a{ background: url(sprite.png) -300px 0px no-repeat; z-index: 110; }
+#copy1b{ background: url(sprite.png) -600px 0px no-repeat; z-index: 110; left:120px; }
+#copy1c{ background: url(sprite.png) 0px -250px no-repeat; z-index: 110; }
+#copy2{ background: url(sprite.png) 0px -250px no-repeat; z-index: 110; }
+#copy3{ background: url(sprite.png) -300px -250px no-repeat; z-index: 201; }
+#copy4{ background: url(sprite.png) -600px -250px no-repeat; z-index: 201; }
+#endFrame{ background-color:#ffffff; width:300px; height:202px; top:48px; z-index: 200; }
+#obot{ background: url(sprite.png) -300px -500px no-repeat; z-index: 151; }
+#cta{ background: url(sprite.png) 0px -500px no-repeat; z-index: 201; }
+
+#whiteBlock{
+    background: #ffffff;  
+    opacity: 0; 
+    top: 0px;
+	left: 0px;
+    width: 300px; 
+	height: 48px; 
+    z-index: 100;
+}
+
+#robot{
+	position: absolute;
+	width:300px;
+	height:48px;
+	left:0px;
+	top: 0px;
+	display:block;
+	z-index: 110;
+	overflow:hidden;
+}
+
+#roomba2{
+	background: url(item2.png) 0px 0px no-repeat; 
+	z-index: 201; 	
+}
+
+#roomba-brush{ 
+	background: url(brush.png) 0px 0px no-repeat; 
+	opacity:1; 
+	z-index: 204; 
+	width: 6px;
+    height: 7px;
+    top: 355px;
+    left: 297px;
+}
+
+#roomba-main{
+	z-index: 205; 
+	-webkit-transform: translate(-17px, 0px) rotate(0.1deg); 
+	-ms-transform: translate(-17px, 0px) rotate(0.1deg); 
+	-moz-transform: translate(-17px, 0px) rotate(0.1deg); 
+	transform: translate(-17px, 0px) rotate(0.1deg);
+}
+
+#circleR { 	
+	opacity: 0;
+	width: 48px;
+	height: 48px;
+	top: 0px;
+    left: 0px;
+    z-index: 110;
+    position: absolute;
+    background: url(circleR.png) 0 0 no-repeat;
+	
+	-webkit-transform: translate( 164px, 0px) scale(.2) rotate(0.1deg);
+	-ms-transform: translate( 164px, 0px) scale(.2) rotate(0.1deg);
+	-moz-transform: translate( 164px, 0px) scale(.2) rotate(0.1deg);
+    transform: translate( 164px, 0px) scale(.2) rotate(0.1deg);
+
+    -webkit-transform-origin: center center;
+	-ms-transform-origin: center center;
+	-moz-transform-origin: center center;
+	transform-origin: center center;
+}
+
+#greenBg { 
+    width: 400px;
+	height: 400px;
+	display: block;
+	opacity: 0;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+	background-color:#67a811;
+	border-radius:100%;
+	
+	-webkit-transform: translate(-14px, -174px) scale(0.2) rotate(0.1deg);
+	-ms-transform: translate(-14px, -174px) scale(0.2) rotate(0.1deg);
+	-moz-transform: translate(-14px, -174px) scale(0.2) rotate(0.1deg);
+	transform: translate(-14px, -174px) scale(0.2) rotate(0.1deg); 
+	
+	-webkit-transform-origin: center center;
+	-ms-transform-origin: center center;
+	-moz-transform-origin: center center;
+	transform-origin: center center;
+}
+
+#shineHolder{
+	position: absolute;
+	width: 127px;
+    height: 38px;
+    left: 152px;
+    top: 163px;
+	display:block;
+	z-index: 999;
+	overflow:hidden;
+}
+
+#shine{
+	position: absolute;
+	width:52px;
+	height:105px;
+	left: 0px;
+    top: 0px;
+	display:block;
+	opacity: 0.7;
+	background: url(shine.png) 0 0 no-repeat;	
+	-webkit-transform: translate(-45px, -75px) rotate(20deg);
+	-ms-transform: translate(-45px, -75px) rotate(20deg);
+	-moz-transform: translate(-45px, -75px) rotate(20deg);
+	transform: translate(-45px, -75px) rotate(20deg); 
+}
+
+#whiteBg{
+	z-index: 110;
+	background-color:#ffffff;
+}
+
+a.click-through{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 999;
+    background: #ffffff;
+}
+
+/* Classes Begin for Animation */
+
+.copy1a_move{
+	-webkit-transform: translate(120px, 0px) !important;
+	-ms-transform: translate( 120px, 0px) !important;
+	-moz-transform: translate( 120px, 0px) !important;
+	transform: translate( 120px, 0px) !important;
+}
+
+.copy1b_move{
+	-webkit-transform: translate( -120px, 0px) !important;
+	-ms-transform: translate( -120px, 0px) !important;
+	-moz-transform: translate( -120px, 0px) !important;
+	transform: translate( -120px, 0px) !important;
+}
+
+.romba_move{
+	-webkit-transform: translate( -17px, -455px) rotate(0.1deg) !important;
+	-ms-transform: translate( -17px, -455px) rotate(0.1deg) !important;
+	-moz-transform: translate( -17px, -455px) rotate(0.1deg) !important;
+	transform: translate( -17px, -455px) rotate(0.1deg) !important;
+	
+}
+
+.romba2_up{
+	-webkit-transform:translate(33px, 65px) scale(0.91) rotate(0.1deg) !important; 
+	-ms-transform:translate(33px, 65px) scale(0.91) rotate(0.1deg) !important; 
+	-moz-transform:translate(33px, 65px) scale(0.91) rotate(0.1deg) !important; 
+	transform:translate(33px, 65px) scale(0.91) rotate(0.1deg) !important;
+	
+}
+
+.romba2_left{
+	-webkit-transform: translate(-67px, 55px) scale(0.86) rotate(0.1deg) !important;
+	-ms-transform: translate(-67px, 55px) scale(0.86) rotate(0.1deg) !important;
+	-moz-transform: translate(-67px, 55px) scale(0.86) rotate(0.1deg) !important;
+	transform: translate(-67px, 55px) scale(0.86) rotate(0.1deg) !important;
+	
+}
+
+.brush{
+	-webkit-animation: spin 0.15s linear infinite; transform-origin: 0% 80%; z-index:0;
+	-ms-animation: spin 0.15s linear infinite; transform-origin: 0% 80%; z-index:0;
+	-moz-animation: spin 0.15s linear infinite; transform-origin: 0% 80%; z-index:0;
+	-o-animation: spin 0.15s linear infinite; transform-origin: 0% 80%; z-index:0;
+	animation: spin 0.15s linear infinite; transform-origin: 0% 80%; z-index:0;	
+}
+
+@keyframes spin{
+	0%{transform:rotate(0deg);}		
+	100%{transform:rotate(40deg);}	
+}
+
+.move {
+	-webkit-transform: translate(134px, -26px) rotate(20deg) !important;
+	-ms-transform: translate(134px, -26px) rotate(20deg) !important;
+	-moz-transform: translate(134px, -26px) rotate(20deg) !important;
+	transform: translate(134px, -26px) rotate(20deg) !important; 
+}
+
+.scale-in{
+	-webkit-transform: translate( 166px, 0px) scale(1) !important;
+	-ms-transform: translate( 166px, 0px) scale(1) !important;
+	-moz-transform: translate( 166px, 0px) scale(1) !important;
+    transform: translate( 166px, 0px) scale(1) !important;
+}
+
+.zoom-in{
+	-webkit-transform: translate( -69px, -135px) scale(1)!important;
+	-ms-transform: translate( -69px, -135px) scale(1)!important;
+	-moz-transform: translate( -69px, -135px) scale(1)!important;
+    transform: translate( -69px, -135px) scale(1)!important;
+}
+	
+.pic2a_hide{
+	height:0px !important;	
+}
+
+/* Classes Ended for Animation */
+
+/* Transition animations begins */
+
+.animClass { -webkit-transform: translate3d(0, 0, 0); /* Force Hardware Acceleration */ }
+
+.transition-1{
+	-webkit-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.transition-2{
+	-webkit-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+	
+.transition-3{
+	-webkit-transition: all 2s linear;
+	-ms-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	transition: all 2s linear;
+}
+
+.transition-4{
+	-webkit-transition: all 5s linear;
+	-ms-transition: all 5s linear;
+	-moz-transition: all 5s linear;
+	transition: all 5s linear;
+}
+
+.transition-5{
+	-webkit-transition: all 8s linear;
+	-ms-transition: all 8s linear;
+	-moz-transition: all 8s linear;
+	transition: all 8s linear;
+}
+	
+.transition-6{
+	-webkit-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+	
+.transition-7{
+	-webkit-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.transition-8{
+	-webkit-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	}
+	
+.transition-9{
+	-webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+.transition-10{
+	-webkit-transition: all 6.9s ease-in-out;
+	-ms-transition: all 6.9s ease-in-out;
+	-moz-transition: all 6.9s ease-in-out;
+	transition: all 6.9s ease-in-out;
+}
+
+/* Transition animations end */
+
+/* fades */
+.fade-in{ opacity: 1 !important;}
+.fade-out{ opacity: 0 !important;}
